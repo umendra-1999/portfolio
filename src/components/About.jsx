@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <>
+    <div className='overflow-hidden h-470'>
    <div className='h-20 border-4 relative top-4 text-4xl bg-black text-amber-50 rounded-4xl'>
     <h1 className='relative top-4 left-8'>Umendra Pratap Singh</h1>
     <div className='flex gap-4 relative text-2xl left-320 bottom-5'>
@@ -36,6 +37,7 @@ opportunities..</p>
 </div>
 <div className='relative top-28'>
 <Footer/>
+</div>
 </div>
     </>
   )

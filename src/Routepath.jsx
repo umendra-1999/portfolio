@@ -8,7 +8,6 @@ import Contact from './components/Contact'
 import About from './components/About'
 import Summary from './components/Summary'
 import Experience from './components/Experience'
-import Resume from './components/Resume'
 import Projects from './components/Projects'
 
 
@@ -26,7 +25,6 @@ const Routepath = () => {
   <Route path="/contact" element={<Contact/>}></Route>
   <Route path="/summary" element={<Summary/>}></Route>
   <Route path="/experience" element={<Experience/>}></Route>
-  <Route path="/resume" element={<Resume/>}></Route>
   <Route path="/projects" element={<Projects/>}></Route>
 
 
