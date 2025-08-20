@@ -9,6 +9,7 @@ import About from './components/About'
 import Summary from './components/Summary'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import Download from './components/Download'
 
 
 const Routepath = () => {
@@ -26,6 +27,7 @@ const Routepath = () => {
   <Route path="/summary" element={<Summary/>}></Route>
   <Route path="/experience" element={<Experience/>}></Route>
   <Route path="/projects" element={<Projects/>}></Route>
+  <Route path="/download" element={<Download/>}></Route>
 
 
  </Routes>

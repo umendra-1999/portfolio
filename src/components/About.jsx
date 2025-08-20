@@ -1,12 +1,14 @@
 import React from 'react'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
+import Download from './Download'
 
 
 const About = () => {
   return (
     <>
     <div className='overflow-hidden h-470'>
+
    <div className='h-20 border-4 relative top-4 text-4xl bg-black text-amber-50 rounded-4xl'>
     <h1 className='relative top-4 left-8'>Umendra Pratap Singh</h1>
     <div className='flex gap-4 relative text-2xl left-320 bottom-5'>
@@ -15,10 +17,10 @@ const About = () => {
 </div>
    </div>
 
-
     <div className='border-4 rounded-4xl bg-black relative top-6 text-amber-50 h-60'>
       <h1 className='relative left-20 top-10'>About me.</h1>
       <h1 className='text-5xl font-mono relative left-20 top-10'>Aspiring Software <br /> Developer</h1>
+     <div className=' relative top-65 left-180'> <Download/></div> {/* resume downloadable button impported from Download.jsx */}
       </div>
        <div className=' bg-[rgb(221,204,194)] rounded-4xl border-4 relative top-10 h-110 text-black'>
         <h1 className='text-xl relative left-24 top-16'>My Journey</h1>
