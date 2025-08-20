@@ -21,7 +21,7 @@ const Download = () => {
         right-2
     "
   >
-    Download resume
+    Download Resume
   </a>
   
   <a
