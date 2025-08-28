@@ -48,7 +48,6 @@ const Contact = () => {
       alert("Form submitted successfully ✅");
       console.log("Form Data:", formData);
 
-      
       setFormData({
         firstName: "",
         lastName: "",
@@ -60,93 +59,94 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div className="bg-black h-150">
-        <div className="border-4 w-140 h-130 top-12 relative left-16 bg-black text-amber-50 rounded-2xl">
-          <h1 className="text-3xl relative left-14 top-10">Contact Me</h1>
-          <h1 className="text-6xl relative left-14 top-12">
-            Reach out for Opportunities
-          </h1>
-          <h1 className="font-medium relative left-14 top-16">
-            Let’s Connect to discuss about Jobs and <br /> internship opportunities.
-          </h1>
-        </div>
-
-        <div className="relative left-220 bottom-118 font-bold rounded-2xl w-140">
-          <form onSubmit={handleSubmit}>
-            <div className="grid place-items-center text-amber-50 bg-black border-4 w-140 rounded-2xl h-130 p-6 gap-4">
-
-              {/* First Name */}
-              <div className="flex flex-col">
-                <label>First Name:</label>
-                <input
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  name="firstName"
-                  className="border-2 w-60 p-1 text-amber-50 rounded"
-                  type="text"
-                />
-                {errors.firstName && (
-                  <span className="text-red-400 text-sm">{errors.firstName}</span>
-                )}
-              </div>
-
-              {/* Last Name */}
-              <div className="flex flex-col">
-                <label>Last Name:</label>
-                <input
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  name="lastName"
-                  className="border-2 w-60 p-1 text-amber-50 rounded"
-                  type="text"
-                />
-                {errors.lastName && (
-                  <span className="text-red-400 text-sm">{errors.lastName}</span>
-                )}
-              </div>
-
-              {/* Email */}
-              <div className="flex flex-col">
-                <label>Email:</label>
-                <input
-                  value={formData.email}
-                  onChange={handleChange}
-                  name="email"
-                  className="border-2 w-60 p-1 text-amber-50 rounded"
-                  type="text"
-                />
-                {errors.email && (
-                  <span className="text-red-400 text-sm">{errors.email}</span>
-                )}
-              </div>
-
-              {/* Message */}
-              <div className="flex flex-col">
-                <label>Message:</label>
-                <textarea
-                  value={formData.message}
-                  onChange={handleChange}
-                  name="message"
-                  className="border-2 w-60 p-1 text-amber-50 rounded"
-                ></textarea>
-                {errors.message && (
-                  <span className="text-red-400 text-sm">{errors.message}</span>
-                )}
-              </div>
-
-              {/* Submit Button */}
-              <button
-                type="submit"
-                className="border-2 w-20 rounded-2xl bg-amber-50 text-black mt-2 hover:bg-amber-200 transition"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
+    <div className="bg-black min-h-screen flex flex-col items-center justify-center px-4 py-10">
+      {/* Header Section */}
+      <div className="border-4 max-w-3xl w-full text-center md:text-left 
+                      bg-black text-amber-50 rounded-2xl p-6 md:p-10 mb-10">
+        <h1 className="text-3xl md:text-4xl font-semibold">Contact Me</h1>
+        <h2 className="text-4xl md:text-6xl font-bold mt-4">
+          Reach out for Opportunities
+        </h2>
+        <p className="text-md md:text-lg font-medium mt-6">
+          Let’s Connect to discuss about Jobs and <br className="hidden md:block" />
+          Internship opportunities.
+        </p>
       </div>
-    </>
+
+      {/* Form Section */}
+      <div className="border-4 max-w-2xl w-full bg-black text-amber-50 rounded-2xl p-6">
+        <form onSubmit={handleSubmit} className="grid gap-4">
+          {/* First Name */}
+          <div className="flex flex-col">
+            <label>First Name:</label>
+            <input
+              value={formData.firstName}
+              onChange={handleChange}
+              name="firstName"
+              className="border-2 w-full md:w-80 p-2 text-amber-50 rounded bg-transparent"
+              type="text"
+            />
+            {errors.firstName && (
+              <span className="text-red-400 text-sm">{errors.firstName}</span>
+            )}
+          </div>
+
+          {/* Last Name */}
+          <div className="flex flex-col">
+            <label>Last Name:</label>
+            <input
+              value={formData.lastName}
+              onChange={handleChange}
+              name="lastName"
+              className="border-2 w-full md:w-80 p-2 text-amber-50 rounded bg-transparent"
+              type="text"
+            />
+            {errors.lastName && (
+              <span className="text-red-400 text-sm">{errors.lastName}</span>
+            )}
+          </div>
+
+          {/* Email */}
+          <div className="flex flex-col">
+            <label>Email:</label>
+            <input
+              value={formData.email}
+              onChange={handleChange}
+              name="email"
+              className="border-2 w-full md:w-80 p-2 text-amber-50 rounded bg-transparent"
+              type="text"
+            />
+            {errors.email && (
+              <span className="text-red-400 text-sm">{errors.email}</span>
+            )}
+          </div>
+
+          {/* Message */}
+          <div className="flex flex-col">
+            <label>Message:</label>
+            <textarea
+              value={formData.message}
+              onChange={handleChange}
+              name="message"
+              rows="4"
+              className="border-2 w-full md:w-96 p-2 text-amber-50 rounded bg-transparent"
+            />
+            {errors.message && (
+              <span className="text-red-400 text-sm">{errors.message}</span>
+            )}
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="border-2 w-full md:w-32 py-2 rounded-2xl 
+                       bg-amber-50 text-black mt-4 hover:bg-amber-200 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
   );
 };
 

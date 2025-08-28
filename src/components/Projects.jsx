@@ -1,46 +1,90 @@
 import React from 'react'
 
 const Projects = () => {
-
   return (
-    <>
-    <div className='flex h-180  rounded-4xl  '>
-      <h1 className='text-6xl font-mono relative left-145 rounded-4xl bg-black text-amber-50 h-22 top-6 border-2 w-90 grid place-items-center'>Projects</h1>
-    <div className='border-4 border-black  w-130 h-140 bg-black text-amber-50 rounded-4xl relative right-60 top-30'>
-      <img className='w-130 h-60 rounded-4xl' src="images\projectsimg\bookcircle.png" alt="" />
-      <div className='text-center'>
-      <h1 className='text-2xl font-bold'>Book Circle.</h1>
-      <h1>A social platform for book lovers to discover books.</h1>
-      <h1>Responsive UI with reusable components.</h1>
-      <h1>Search for books based on category, location, or availability.</h1>
-      <h1>Upload book details, including title, category (fiction, nonfiction),<br /> and price (paid/unpaid).</h1>
-      <h1 className=''>Highlights my skills in React, API integration, and  dynamic UI development.</h1>
-     </div>
-      <div className='flex gap-12 justify-center m-4'>
-       <a href="https://github.com/umendra-1999/BOOK_CIRCLE."> <h1 className='border-4  rounded-4xl w-16 text-center'>Github</h1></a>
-       <a href="https://bookcircleapp.netlify.app/"> <h1 className='border-4 rounded-4xl w-16 text-center'>Live</h1></a>
-      </div>
-      </div>
+    <div className="px-6 py-12 bg-gray-100 min-h-screen">
+      {/* Header */}
+      <h1 className="text-4xl md:text-6xl font-mono text-center bg-black text-amber-50 border-2 rounded-2xl py-4 mb-12">
+        Projects
+      </h1>
 
+      {/* Projects Grid */}
+      <div className="grid gap-10 md:grid-cols-2 max-w-6xl mx-auto">
 
-    
-    <div className='border-4 border-black  h-140 w-130 bg-black text-amber-50 rounded-4xl relative top-30'>
-      <img className='w-130 h-60  rounded-4xl' src="images\projectsimg\youtube.png" alt="" />
-      <div className='text-center'>
-      <h1 className='text-2xl font-bold'>Youtube-clone.</h1>
-      <h1>Custom search suggestions using Stack Overflow API. </h1>
-      <h1>Video playback via YouTube Data API.</h1>
-      <h1>Recursive nested comments.</h1>
-      <h1>Responsive UI with reusable components.</h1>
-      <h1>A responsive video streaming app inspired by YouTube, built with React.</h1>
-     </div>
-      <div className='flex gap-12 justify-center m-4'>
-       <a href="https://github.com/umendra-1999/youtube"> <h1 className='border-4  rounded-4xl w-16 text-center'>Github</h1></a>
-       <a href="https://youtube-app1.netlify.app/"> <h1 className='border-4 rounded-4xl w-16 text-center'>Live</h1></a>
+        {/* Project 1 - Book Circle */}
+        <div className="border-4 border-black bg-black text-amber-50 rounded-2xl overflow-hidden shadow-lg">
+          <img
+            className="w-full h-60 object-cover"
+            src="images/projectsimg/bookcircle.png"
+            alt="Book Circle"
+          />
+          <div className="p-6 text-center space-y-2">
+            <h2 className="text-2xl font-bold">Book Circle</h2>
+            <p>A social platform for book lovers to discover books.</p>
+            <p>Responsive UI with reusable components.</p>
+            <p>Search for books based on category, location, or availability.</p>
+            <p>Upload book details including title, category, and price.</p>
+            <p className="text-sm">
+              Highlights skills in <strong>React</strong>, <strong>API integration</strong>, and <strong>dynamic UI development</strong>.
+            </p>
+          </div>
+          <div className="flex gap-6 justify-center pb-6">
+            <a
+              href="https://github.com/umendra-1999/BOOK_CIRCLE."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://bookcircleapp.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"
+            >
+              Live
+            </a>
+          </div>
+        </div>
+
+        {/* Project 2 - YouTube Clone */}
+        <div className="border-4 border-black bg-black text-amber-50 rounded-2xl overflow-hidden shadow-lg">
+          <img
+            className="w-full h-60 object-cover"
+            src="images/projectsimg/youtube.png"
+            alt="YouTube Clone"
+          />
+          <div className="p-6 text-center space-y-2">
+            <h2 className="text-2xl font-bold">YouTube Clone</h2>
+            <p>Custom search suggestions using Stack Overflow API.</p>
+            <p>Video playback via YouTube Data API.</p>
+            <p>Recursive nested comments.</p>
+            <p>Responsive UI with reusable components.</p>
+            <p>A responsive video streaming app inspired by YouTube, built in React.</p>
+          </div>
+          <div className="flex gap-6 justify-center pb-6">
+            <a
+              href="https://github.com/umendra-1999/youtube"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://youtube-app1.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"
+            >
+              Live
+            </a>
+          </div>
+        </div>
+
       </div>
-      </div>
-      </div>
-    </>
+    </div>
   )
 }
 

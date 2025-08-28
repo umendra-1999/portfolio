@@ -1,22 +1,34 @@
 import { Link } from 'react-router-dom'
-import Download from './Download'
+
 
 const Header = () => {
   return (
-    <>
-      <div className='h-20 border-4 relative top- text-4xl bg-black text-amber-50 rounded-4xl'>
-          <h1 className='relative top-4 left-8'>Portfolio</h1>
-          <div className='flex gap-4 relative text-2xl left-320 bottom-5'>
-          <Link  to="/">Home</Link>    
-          <Link  to="/About">About</Link>    
+    <header className="w-full bg-black text-amber-50 border-b-4 rounded-b-2xl px-6 py-4">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        
+        {/* Logo / Title */}
+        <h1 className="text-2xl md:text-4xl font-bold  hover:text-amber-300 transition
+">Portfolio</h1>
+        
+        {/* Nav Links */}
+        <nav className="flex gap-6 text-lg md:text-2xl">
+          <Link 
+            to="/" 
+            className="hover:text-amber-300 transition "
+          >
+            Home
+          </Link>
+          <Link 
+            to="/About" 
+            className="hover:text-amber-300 transition "
+          >
+            About
+          </Link>
+        </nav>
+        
       </div>
-            
-         </div>
-      
-
-    </>
+    </header>
   )
 }
 
 export default Header
-
