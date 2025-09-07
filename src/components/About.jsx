@@ -21,7 +21,7 @@ const About = () => {
 
         {/* About Me Section */}
         <div className="border-4 rounded-3xl bg-black text-amber-50 mt-6 px-6 py-10 text-center md:text-left">
-          <h1 className="text-xl md:text-2xl mb-4">About me.</h1>
+          <h1 className="text-xl md:text-2xl mb-4">About me</h1>
           <h1 className="text-3xl md:text-5xl font-mono leading-snug">
             Aspiring Software <br /> Developer
           </h1>
