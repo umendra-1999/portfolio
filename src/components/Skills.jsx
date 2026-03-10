@@ -7,6 +7,8 @@ const Skills = () => {
     { name: "CSS3", img: "images/css.png" },
     { name: "JAVASCRIPT", img: "images/js.png" },
     { name: "REACT.JS", img: "images/react.png" },
+    { name: "Next.js", img: "images/next.png" },
+    { name: "Firebase", img: "images/firebase.png" },
     { name: "TAILWIND", img: "images/tailwind.png" },
     { name: "SQL", img: "images/sql.png" },
   ];
@@ -21,9 +23,9 @@ const Skills = () => {
         </h1>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-10 place-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-16 place-items-center">
           {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center ">
               <img 
                 src={skill.img} 
                 alt={skill.name}

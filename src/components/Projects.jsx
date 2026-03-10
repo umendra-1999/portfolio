@@ -15,22 +15,20 @@ const Projects = () => {
         <div className="border-4 border-black bg-black text-amber-50 rounded-2xl overflow-hidden shadow-lg">
           <img
             className="w-full h-60 object-cover"
-            src="images/projectsimg/bookcircle.png"
+            src="images/projectsimg/neev.png"
             alt="Book Circle"
           />
           <div className="p-6 text-center space-y-2">
-            <h2 className="text-2xl font-bold">Book Circle</h2>
-            <p>A social platform for book lovers to discover books.</p>
-            <p>Responsive UI with reusable components.</p>
-            <p>Search for books based on category, location, or availability.</p>
-            <p>Upload book details including title, category, and price.</p>
-            <p className="text-sm">
-              Highlights skills in <strong>React</strong>, <strong>API integration</strong>, and <strong>dynamic UI development</strong>.
-            </p>
+            <h2 className="text-2xl font-bold">Neev Realty</h2>
+            <p>Developed a real estate property listing platform for Neev Realty that allows users to explore residential and commercial properties with detailed information.</p>
+            <p>Built the frontend using Next.js, React, TypeScript, and Tailwind CSS to create a modern and responsive UI.</p>
+            <p>Integrated backend data using Firebase for property listings and content management.</p>
+            <p>Implemented dynamic property pages including amenities, builder details, and property information.</p>
+            
           </div>
           <div className="flex gap-6 justify-center pb-6">
             <a
-              href="https://github.com/umendra-1999/BOOK_CIRCLE."
+              href="https://github.com/Pawancmj/neev-reality.git"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"
@@ -38,7 +36,7 @@ const Projects = () => {
               GitHub
             </a>
             <a
-              href="https://bookcircleapp.netlify.app/"
+              href="https://www.neevrealty.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"
@@ -52,20 +50,19 @@ const Projects = () => {
         <div className="border-4 border-black bg-black text-amber-50 rounded-2xl overflow-hidden shadow-lg">
           <img
             className="w-full h-60 object-cover"
-            src="images/projectsimg/youtube.png"
+            src="images/projectsimg/interview.png"
             alt="YouTube Clone"
           />
           <div className="p-6 text-center space-y-2">
-            <h2 className="text-2xl font-bold">YouTube Clone</h2>
-            <p>Custom search suggestions using Stack Overflow API.</p>
-            <p>Video playback via YouTube Data API.</p>
-            <p>Recursive nested comments.</p>
-            <p>Responsive UI with reusable components.</p>
-            <p>A responsive video streaming app inspired by YouTube, built in React.</p>
+            <h2 className="text-2xl font-bold">Interview prep edu.</h2>
+            <p>Developed an online education platform that provides structured learning through multiple courses and educational content.</p>
+            <p>Implemented course listing pages and detailed course sections to allow users to explore and access different learning programs.</p>
+            <p>Optimized website performance and navigation using features of Next.js for fast loading and smooth user experience.</p>
+            <p>Built the frontend using Next.js, React, TypeScript, and Tailwind CSS to create a modern and responsive user interface.</p>
           </div>
           <div className="flex gap-6 justify-center pb-6">
             <a
-              href="https://github.com/umendra-1999/youtube"
+              href="https://github.com/umendra-1999/interview-prep-edu.git"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"
@@ -73,7 +70,7 @@ const Projects = () => {
               GitHub
             </a>
             <a
-              href="https://youtube-app1.netlify.app/"
+              href="https://www.interviewprepedu.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 px-4 py-2 rounded-lg hover:bg-amber-50 hover:text-black transition"

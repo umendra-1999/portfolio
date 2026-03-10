@@ -27,14 +27,15 @@ const Experience = () => {
 
         {/* Second Experience */}
         <div className="border-2 bg-[rgb(221,204,194)] rounded-2xl p-6 text-center">
-          <h1 className="text-xl md:text-2xl font-semibold">Web Developer Intern</h1>
+          <h1 className="text-xl md:text-2xl font-semibold">Web Developer</h1>
           <h2 className="text-lg font-medium">Cyberforenx And Associates</h2>
-          <h3 className="text-sm md:text-base font-light">July 2025 - Present</h3>
+          <h3 className="text-sm md:text-base font-light">July 2025 - March 2026</h3>
 
           <div className="font-semibold mt-4 text-sm md:text-base space-y-2 text-left">
+            <p>• Developed responsive and scalable web applications using React and Next.js.</p>
             <p>• Built reusable UI components with consistent design, improving development efficiency across projects.</p>
-            <p>• Improved form validation and event handling in React.js, enhancing user input accuracy and usability.</p>
-            <p>• Implemented a component-based structure using React.js, making code easier to maintain and scale.</p>
+            <p>• Integrated frontend with backend services using Firebase for data fetching and management.</p>
+            <p>• Worked on UI improvements, debugging, and performance optimization to enhance user experience.</p>
           </div>
         </div>
 

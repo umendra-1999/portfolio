@@ -5,7 +5,7 @@ const Download = () => {
     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-6">
       {/* Download Resume */}
       <a
-        href="/resume/umendra_resume.pdf" // ✅ keep your PDF inside public/resume/
+        href="/resume/Umendra_resume9628192156.pdf" // ✅ keep your PDF inside public/resume/
         download
         className="
           bg-red-500 
@@ -25,7 +25,7 @@ const Download = () => {
 
       {/* View Resume */}
       <a
-        href="/resume/umendra_resume.pdf"
+        href="/resume/Umendra_resume9628192156.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="
